@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: ed99f8dfc4396ce488928ff5692feb46
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Body: {instanceID: 0}
+  - Head: {instanceID: 0}
+  - Leg_F_F: {instanceID: 0}
+  - Leg_F_B: {instanceID: 0}
+  - Leg_B_B: {instanceID: 0}
+  - Leg_B_F: {instanceID: 0}
+  - Body_Pink: {fileID: 1535429401, guid: 80c739a0e37e0b24f84f1664c1b1212e, type: 3}
+  - Head_Pink: {fileID: -1913788563, guid: 80c739a0e37e0b24f84f1664c1b1212e, type: 3}
+  - Leg_F_F_Pink: {fileID: 1700878226, guid: f87b66be0bbb9884f9890597cec476f2, type: 3}
+  - Leg_F_B_Pink: {fileID: 749324887, guid: 80c739a0e37e0b24f84f1664c1b1212e, type: 3}
+  - Leg_B_B_Pink: {fileID: 196462332, guid: 7116ba1b530eaaa44b69cb2280d7adff, type: 3}
+  - Leg_B_F_Pink: {fileID: 1172478578, guid: 80c739a0e37e0b24f84f1664c1b1212e, type: 3}
+  - Body_Black: {fileID: -1307898579, guid: 52ec025606cb9c648bff8f347c4d4ed0, type: 3}
+  - Head_Black: {fileID: 1169332454, guid: 52ec025606cb9c648bff8f347c4d4ed0, type: 3}
+  - Leg_F_F_Black: {fileID: -314205698, guid: 52ec025606cb9c648bff8f347c4d4ed0, type: 3}
+  - Leg_F_B_Black: {fileID: -1935660770, guid: 52ec025606cb9c648bff8f347c4d4ed0, type: 3}
+  - Leg_B_B_Black: {fileID: -1400122276, guid: 52ec025606cb9c648bff8f347c4d4ed0, type: 3}
+  - Leg_B_F_Black: {fileID: 2104961777, guid: 52ec025606cb9c648bff8f347c4d4ed0, type: 3}
+  - Body_Green: {fileID: -545653635, guid: 49290f9d098e9f8478d8975c7af69b18, type: 3}
+  - Head_Green: {fileID: 1241770671, guid: 49290f9d098e9f8478d8975c7af69b18, type: 3}
+  - Leg_F_F_Green: {fileID: -332588514, guid: 70f7b0ad19f7b9d45b6a326266343dcd, type: 3}
+  - Leg_F_B_Green: {fileID: 1097920071, guid: 70f7b0ad19f7b9d45b6a326266343dcd, type: 3}
+  - Leg_B_B_Green: {fileID: 1493884346, guid: 49290f9d098e9f8478d8975c7af69b18, type: 3}
+  - Leg_B_F_Green: {fileID: -1309079154, guid: 49290f9d098e9f8478d8975c7af69b18, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
