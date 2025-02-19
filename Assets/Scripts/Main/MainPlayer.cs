@@ -8,6 +8,16 @@ public class MainPlayer : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
+    private const string playerkeyx = "PlayerX";
+    private const string playerkeyy = "PlayerY";
+
+    void Awake()
+    {
+        float playerx = PlayerPrefs.GetFloat(playerkeyx, 0);
+        float playery = PlayerPrefs.GetFloat(playerkeyy, 0);
+        transform.position = new Vector3(playerx, playery, transform.position.z);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -15,18 +25,12 @@ public class MainPlayer : MonoBehaviour
 
     void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal");  // A, D 또는 ←, →
-        moveInput.y = Input.GetAxisRaw("Vertical");    // W, S 또는 ↑, ↓
+        moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
 
-        // 방향에 따라 캐릭터 회전
-        if (moveInput.x > 0) // 오른쪽 이동
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        else if (moveInput.x < 0) // 왼쪽 이동
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
+        // 방향 설정
+        if (moveInput.x > 0) transform.eulerAngles = new Vector3(0, 0, 0);
+        else if (moveInput.x < 0) transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
     void FixedUpdate()
