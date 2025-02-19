@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPCInteraction : MonoBehaviour
 {
     public GameObject MiniGameInfoUI;  // 활성화할 캔버스를 연결할 변수
+    public GameObject MainUI;
     private bool isInRange = false;  // 플레이어가 NPC 근처에 있는지 확인하는 변수
     private const string playerkeyx = "PlayerX";
     private const string playerkeyy = "PlayerY";
@@ -16,14 +17,14 @@ public class NPCInteraction : MonoBehaviour
         {
             // 캔버스 활성화
             MiniGameInfoUI.SetActive(true);
-
+            MainUI.SetActive(false);
             // 플레이어 위치 저장
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
             {
                 PlayerPrefs.SetFloat(playerkeyx, playerObj.transform.position.x);
                 PlayerPrefs.SetFloat(playerkeyy, playerObj.transform.position.y);
-                PlayerPrefs.Save();  // <<<<<< 여기 추가!
+                PlayerPrefs.Save();  
             }
         }
     }
