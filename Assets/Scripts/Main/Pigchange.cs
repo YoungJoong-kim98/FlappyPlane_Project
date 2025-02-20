@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Pigchange : MonoBehaviour
 {
-    private const string V = "BalckPig";
     public SpriteRenderer Body; //  캐릭터의 Body SpriteRenderer
     public SpriteRenderer Head;
     public SpriteRenderer Leg_F_F; // 앞쪽 왼쪽 다리 (Front-Front)
