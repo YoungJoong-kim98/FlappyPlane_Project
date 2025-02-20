@@ -8,6 +8,8 @@ public class MainPlayer : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
+    //private Vehicle currentVehicle; // 현재 탑승 중인 차량
+
     private const string playerkeyx = "PlayerX";
     private const string playerkeyy = "PlayerY";
 
