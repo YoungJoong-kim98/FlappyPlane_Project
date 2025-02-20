@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pigchange : MonoBehaviour
 {
+    private const string V = "BalckPig";
     public SpriteRenderer Body; //  캐릭터의 Body SpriteRenderer
     public SpriteRenderer Head;
     public SpriteRenderer Leg_F_F; // 앞쪽 왼쪽 다리 (Front-Front)
@@ -34,6 +36,18 @@ public class Pigchange : MonoBehaviour
     public Sprite Leg_B_F_Green;
 
     // 분홍 돼지로 변경
+
+    public Button BalckButton;
+    public Button PigButton;
+    public Button GreenButton;
+
+    public GameObject _Pigchange;
+    private void Start()
+    {
+        BalckButton.onClick.AddListener(BlackPig);
+        PigButton.onClick.AddListener(Pig);
+        GreenButton.onClick.AddListener(GreenPig);
+    }
     public void Pig()
     {
         Body.sprite = Body_Pink;
@@ -42,6 +56,7 @@ public class Pigchange : MonoBehaviour
         Leg_F_B.sprite = Leg_F_B_Pink;
         Leg_B_B.sprite = Leg_B_B_Pink;
         Leg_B_F.sprite = Leg_B_F_Pink;
+        _Pigchange.SetActive(false);
     }
 
     // 검은 돼지로 변경
@@ -53,6 +68,7 @@ public class Pigchange : MonoBehaviour
         Leg_F_B.sprite = Leg_F_B_Black;
         Leg_B_B.sprite = Leg_B_B_Black;
         Leg_B_F.sprite = Leg_B_F_Black;
+        _Pigchange.SetActive(false);
     }
 
     // 초록 돼지로 변경
@@ -64,5 +80,6 @@ public class Pigchange : MonoBehaviour
         Leg_F_B.sprite = Leg_F_B_Green;
         Leg_B_B.sprite = Leg_B_B_Green;
         Leg_B_F.sprite = Leg_B_F_Green;
+        _Pigchange.SetActive(false);
     }
 }
