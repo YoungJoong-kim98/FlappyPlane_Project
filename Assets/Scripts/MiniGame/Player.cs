@@ -28,6 +28,7 @@ public class Player : MonoBehaviour
             Debug.LogError("Not Founded Animator");
         if (_rigidbody == null)
             Debug.LogError("Not Founded Rigidbody");
+        Time.timeScale = 1f;
 
     }
 

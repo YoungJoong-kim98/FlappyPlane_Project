@@ -13,4 +13,8 @@ public class scenemanager : MonoBehaviour
         SceneManager.LoadScene("MainScene");
 
     }
+    public void MiniGame2Scene()
+    {
+        SceneManager.LoadScene("GameScene2");
+    }
 }

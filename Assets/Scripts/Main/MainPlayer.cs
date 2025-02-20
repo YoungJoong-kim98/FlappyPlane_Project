@@ -18,6 +18,7 @@ public class MainPlayer : MonoBehaviour
         float playerx = PlayerPrefs.GetFloat(playerkeyx, 0);
         float playery = PlayerPrefs.GetFloat(playerkeyy, 0);
         transform.position = new Vector3(playerx, playery, transform.position.z);
+        Time.timeScale = 1f;
     }
 
     void Start()
